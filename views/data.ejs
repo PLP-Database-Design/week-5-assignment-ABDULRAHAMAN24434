@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <% for(key in data[0]) {%>
+                <th><%= key %></th>
+            <%}%>
+        </tr>
+
+    </thead>
+    <tbody>
+        <% data.forEach(row =>{%>
+        <tr>
+            <% for(key in row) {%>
+                <td> <%= row[key] %> </td>
+            <%}%>
+        </tr>
+        <%});%>
+    </tbody>
+</table>
